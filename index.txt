@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Loyalty Wallet — Сервис бонусных карт</title>
+  <style>
+    :root { --brand:#007aff; --bg:#f7f8fa; --text:#222; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background:var(--bg); color:var(--text); }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 24px; }
+    header { display:flex; align-items:center; justify-content:space-between; padding: 12px 0; }
+    .logo { font-weight: 800; letter-spacing:.3px; color:var(--brand); font-size: 20px; }
+    .hero {
+      text-align:center; padding: 64px 12px;
+      background: white; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,.06);
+    }
+    h1 { margin: 0 0 8px; font-size: 32px; color: var(--brand); }
+    p.lead { margin: 0 0 24px; font-size: 18px; color:#444; }
+    .buttons { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top: 16px; }
+    .btn {
+      display:inline-block; padding:12px 18px; border-radius:12px; border:2px solid var(--brand);
+      text-decoration:none; color:white; background:var(--brand); font-weight:600;
+      transition: transform .06s ease, box-shadow .2s ease; box-shadow: 0 4px 14px rgba(0,122,255,.25);
+    }
+    .btn.outline { color:var(--brand); background:white; }
+    .btn:hover { transform: translateY(-1px); }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap:16px; margin-top:32px; }
+    .card { background:white; border-radius:16px; padding:18px; box-shadow: 0 6px 20px rgba(0,0,0,.06); }
+    .card h3 { margin:0 0 8px; }
+    footer { text-align:center; color:#777; margin: 28px 0 8px; font-size:14px; }
+    .tiny { font-size: 12px; color:#888; margin-top:6px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">Loyalty Wallet</div>
+      <a class="btn outline" href="mailto:you@example.com?subject=Заявка%20на%20подключение%20Loyalty%20Wallet&body=Здравствуйте!%20Хочу%20подключить%20карту%20лояльности.%20Мой%20бизнес%3A%20">Оставить заявку</a>
+    </header>
+
+    <section class="hero">
+      <h1>Виртуальные бонусные и скидочные карты</h1>
+      <p class="lead">Клиенты добавляют карту в <b>Apple Wallet</b> и <b>Google Wallet</b>, получают бонусы за покупки и акции, а вы — прямые уведомления на их телефоны.</p>
+      <div class="buttons">
+        <!-- Пока демо-ссылки. Позже заменим на реальные “Add to Wallet” -->
+        <a class="btn" href="#demo-apple">Add to Apple Wallet (демо)</a>
+        <a class="btn outline" href="#demo-google">Add to Google Wallet (демо)</a>
+      </div>
+      <div class="tiny">Демо-кнопки для показа. Реальный выпуск подключим позже.</div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Для малого бизнеса</h3>
+        <p>Запустите программу лояльности без приложения. Карты, бонусы и уведомления — в одном месте.</p>
+      </div>
+      <div class="card">
+        <h3>Быстрый старт</h3>
+        <p>Регистрация за 5 минут. Ссылка или QR для клиентов — и карты уже в Wallet.</p>
+      </div>
+      <div class="card">
+        <h3>Push и гео-уведомления</h3>
+        <p>Сообщайте об акциях и скидках, напоминания клиентам рядом с вашей точкой.</p>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 Loyalty Wallet • Предварительная версия<br/>
+      <span class="tiny">Связь: <a href="mailto:delokit1@gmail.com">delokit1@gmail.com</a></span>
+    </footer>
+  </div>
+</body>
+</html>
